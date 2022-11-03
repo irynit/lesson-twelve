@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: ;
+}
 
 .wrapper {
   max-width: 1440px;
@@ -20,12 +23,10 @@
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 45px;
-  /* identical to box height */
-
+  line-height: 45px; 
   text-align: center;
   letter-spacing: 0.05em;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
   color: #000000;
 }
 
@@ -79,10 +80,9 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 45px;
-  /* identical to box height */
-
   text-align: center;
   letter-spacing: 0.05em;
+  margin-top: 120px;
   margin-bottom: 80px;
   color: #000000;
 }
@@ -134,10 +134,9 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 45px;
-  /* identical to box height */
-
   text-align: center;
   letter-spacing: 0.05em;
+  margin-top: 120px;
   margin-bottom: 80px;
   color: #000000;
 }
@@ -197,4 +196,28 @@
 .clem {
   grid-row: 5/6;
   grid-column: 3/4;
+}
+
+.box-item {
+  position: relative;
+}
+
+.box-item div img {
+  opacity: 0;
+}
+
+.box-item:hover div img {
+  opacity: 1;
+}
+
+.box-item div img:first-child {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.box-item div img:last-child {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
